@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Iceland</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+	
+	<style>
+       #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+	
+	
+  </head>
+  <body>
+    <!-- page content AIzaSyBd1FUCrPa5XToAtqfuABalVJ41B-_bg8c-->
+	<h2>Iceland</h2>
+	<p>Earlier this summer I went to Iceland for three weeks, with my two roomates. We backpacked and camped all around the southwestern part of Iceland. These webpages show our journey as well as some things we learned (like what to bring and what not to).</p>
+	
+	
+	<p>Here are most of the places we visited!</p>
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+
+		  var reykjavik = new google.maps.Marker({
+			position: {lat: 64.13336, lng: -21.90018},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var hveragathi = new google.maps.Marker({
+			position: {lat: 63.99494, lng: -21.192809},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var selfoss = new google.maps.Marker({
+			position: {lat: 63.93795, lng: -21.00173},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var laugarvatn = new google.maps.Marker({
+			position: {lat: 64.21784, lng: -20.72445},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var stokkseyri = new google.maps.Marker({
+			position: {lat: 63.83732, lng: -21.06379},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var grindavik = new google.maps.Marker({
+			position: {lat: 63.84477, lng: -22.44132},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var njardvik = new google.maps.Marker({
+			position: {lat: 63.97500, lng: -22.50953},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var vik = new google.maps.Marker({
+			position: {lat: 63.41951, lng: -19.01542},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  var geysir = new google.maps.Marker({
+			position: {lat: 64.31403, lng: -20.29955},
+			icon: icons[feature.type].icon,
+			map: map
+		  });
+		  
+	}
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+	
+	
+	
+	
+  </body>
+</html>
