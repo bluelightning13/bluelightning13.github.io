@@ -3,85 +3,143 @@
   <head>
     <meta charset="utf-8">
     <title>Iceland</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 	
 	<style>
+	body{
+		background-image:url("IMAG1025.jpg");
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		background-position:center top;
+		margin:0px;
+		padding: 0 px;
+		
+	}
+	
+	#intro{
+		width:800px;
+		margin: 0px auto;
+		background-color: #FFF;
+		padding: 20px;
+	}
+	#base{
+		width:800px;
+		margin: auto;
+		background-color: #FFF;
+		padding: 20px;
+	}
        #map {
         width: 100%;
-        height: 400px;
+        height: 550px;
+		margin-left: 0px;
       }
+	  #links{
+	  color:#0595FB;
+	  text-align:center;
+	  font-size:20px
+	  }
+	  a {
+	   text-decoration:none;
+	   color:#888;
+	   font-size:20px
+	  }
+	  a:hover{
+	  color:#05A0FB;
+	  font-style:italic;
+	  }
+	  #bottom{
+	    width:100%;
+		bottom:0;
+		margin-left: 0px;
+		background-color: #05A0FB;
+		padding-top:20px;
+		padding-bottom:20px;
+		
+	  }
     </style>
 	
 	
   </head>
   <body>
     <!-- page content AIzaSyBd1FUCrPa5XToAtqfuABalVJ41B-_bg8c-->
-	<h2>Iceland</h2>
-	<p>Earlier this summer I went to Iceland for three weeks, with my two roomates. We backpacked and camped all around the southwestern part of Iceland. These webpages show our journey as well as some things we learned (like what to bring and what not to).</p>
 	
+	<div id="intro">
+	<div id="links"> <a href="#"> Supplies </a>&nbsp; &nbsp; &nbsp; <a href="#"> Photos </a>&nbsp; &nbsp; &nbsp; <a href="#"> Icelandic History </a></div>
+	<p> &nbsp; </p>
+	<p> &nbsp; </p>
+
+	<h1><span style="color:#05A0FB; font-size:48px">Iceland</span></h1>
+	<p><span style="font-style:italic; color:#05A0FB">by Meagan Hiatt, travelled May 16th - June 7th, 2016</span></p>
+	<p> &nbsp; </p>
+	<p>Earlier this summer I went to Iceland for three weeks, with my two roomates (Michael and Kevin). We backpacked and camped all around the southwestern part of Iceland. These webpages show our journey as well as some things we learned (about Iceland as well as backpacking in general. </p>
+	<p> &nbsp; </p>
 	
-	<p>Here are most of the places we visited!</p>
+	<p>Here are most of the places we visited! We travelled by either walking or taking the bus and carried our backpacks and sleeping bags.</p>
+	</div>
 	<div id="map"></div>
     <script>
       function initMap() {
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv, {
-            center: {lat: 44.540, lng: -78.546},
-            zoom: 8
+            center: {lat: 63.9566, lng: -20.65},
+            zoom: 8,
+		    scrollwheel: false
+			
         });
+		
 
-		  var reykjavik = new google.maps.Marker({
-			position: {lat: 64.13336, lng: -21.90018},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var hveragathi = new google.maps.Marker({
-			position: {lat: 63.99494, lng: -21.192809},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var selfoss = new google.maps.Marker({
-			position: {lat: 63.93795, lng: -21.00173},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var laugarvatn = new google.maps.Marker({
-			position: {lat: 64.21784, lng: -20.72445},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var stokkseyri = new google.maps.Marker({
-			position: {lat: 63.83732, lng: -21.06379},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var grindavik = new google.maps.Marker({
-			position: {lat: 63.84477, lng: -22.44132},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var njardvik = new google.maps.Marker({
-			position: {lat: 63.97500, lng: -22.50953},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var vik = new google.maps.Marker({
-			position: {lat: 63.41951, lng: -19.01542},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
-		  var geysir = new google.maps.Marker({
-			position: {lat: 64.31403, lng: -20.29955},
-			icon: icons[feature.type].icon,
-			map: map
-		  });
 		  
+		  // Multiple Markers
+    var markers = [
+        ['Reykjavik', 64.13336, -21.90018],
+        ['Hveragathi', 63.99494, -21.192809],
+		['selfoss', 63.93795, -21.00173],
+        ['laugarvatn', 64.21784, -20.72445],
+		['stokkseyri', 63.83732, -21.06379],
+        ['grindavik', 63.84477, -22.44132],
+		['njardvik', 63.97500, -22.50953],
+        ['vik',  63.41951, -19.01542],
+		['geysir', 64.31403,  -20.29955]
+    ];
+	
+	for( i = 0; i < markers.length; i++ ) {
+        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        //bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[i][0]
+        });
+		}
+	
+	
 	}
     </script>
-
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+	<div id="base">
+	<h2>Where we went!</h2>
+	<p>There were a lot of places we visited - but a few are highlighted below. For the rest of the places check out our <a href="#" style="font-size:14px">visited</a> page.</p>
+	<h3>Reykjavik</h3>
+	<p>Geothermal Beach, S Gastro Pub, Mandi's</p>
+	<h3>Hveragathi</h3>
+	<p>Farmhouse Guest House, Grafitti park</p>
+	<p> &nbsp; </p>
+	<p> And there was tons of delicious food!</p>
+	<center><img src="IMAG1407.jpg" width=47% />&nbsp; &nbsp; &nbsp; <img src="IMAG0848.jpg" width=47% /></center>
+	<p> &nbsp; </p>
 	
 	
+	</div>
+	<div id="bottom">
+	
+	<center><p> We saw many horses - this one we saw on our walk to Geysir.</p>
+	<img src="panel2.jpg" width=15% />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="IMAG1208.jpg" width=15% />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="IMAG1211.jpg" width=15% />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="IMAG1210.jpg" width=15% />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="panel1.jpg" width=15% /></center>
+	<p align="center" style="font-size:16px"> To see all of the photos - check out our <a href="#" style="font-size:16px">photos</a> page! </p>
+		<p> &nbsp; </p>
+	</div>
 	
 	
   </body>
