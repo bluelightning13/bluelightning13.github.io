@@ -3,189 +3,13 @@
 
 <head>
 <title>M. Hiatt</title>
-<style>
-	body{
-		background-color:#FFFFFF;
-		height:100%;
-		scrollbar-track-color: #EEEEEE;
-		scrollbar-face-color: #00A0F5;
-		scrollbar-highlight-color: #00A0FF;
-		scrollbar-3dlight-color: #808080;
-		scrollbar-darkshadow-color: #00008B;
-		scrollbar-shadow-color: #0090FF;
-		scrollbar-arrow-color: #FFFFFF;
-		scrollbar-base-color: #FFFFFF;
-		min-width:845px;
-		overflow-x:auto;
-	}
-	::-webkit-scrollbar {
-		width: 12px;
-	}
-	 
-	::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-		-webkit-border-radius: 10px;
-		border-radius: 10px;
-	}
-	 
-	::-webkit-scrollbar-thumb {
-		-webkit-border-radius: 10px;
-		border-radius: 10px;
-		background: rgba(0,100,200,0.8); 
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-	}
-	::-webkit-scrollbar-thumb:window-inactive {
-		background: rgba(0,100,200,0.4); 
-	}
-	
-	
-	.container{
-		background-color:#FFFFFF;
-		margin:-15px auto;
-		max-width:900px;
-		max-height:500px;
-		height:500px;
-	}
-	.name{
-		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size:60px;
-		padding:0px;
-	}
-	.blueSq{
-		-ms-transform: rotate(50deg) translate(575px,-315px); /* IE 9 */
-    	-webkit-transform: rotate(50deg)  translate(575px,-315px); /* Safari */
-    	transform: rotate(-40deg) translate(385px,825px);
-		background-color: #6CBDF0;
-		width:150px;
-		height:300px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.blueSq2{
-		-ms-transform: rotate(50deg) translate(-215px,140px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(-215px,140px); /* Safari */
-    	transform: rotate(50deg) translate(-215px,140px);
-		background-color: #6CBDF0;
-		width:150px;
-		height:450px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.greenSq{
-		-ms-transform: rotate(-40deg) translate(65px,323px); /* IE 9 */
-    	-webkit-transform: rotate(-40deg) translate(65px,323px); /* Safari */
-    	transform: rotate(-40deg) translate(65px,323px);
-		background-color:#57D365;
-		width:150px;
-		height:300px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.greenSq2{
-		-ms-transform: rotate(50deg) translate(65px,323px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(65px,323px); /* Safari */
-    	transform: rotate(50deg) translate(685px,-785px);
-		background-color:#57D365;
-		width:150px;
-		height:475px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.yellowSq{
-		-ms-transform: rotate(50deg) translate(460px,65px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(460px,65px); /* Safari */
-    	transform: rotate(50deg) translate(680px,-95px);
-		background-color:#F4EA5B;
-		width:150px;
-		height:480px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.pictureBox{
-		-ms-transform: rotate(50deg) translate(275px,-260px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(275px,-260px); /* Safari */
-    	transform: rotate(50deg) translate(275px,-260px);
-		background-image:url(class.jpg);
-		width:300px;
-		height:300px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.pictureBox2{
-		-ms-transform: rotate(50deg) translate(275px,250px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(275px,250px); /* Safari */
-    	transform: rotate(50deg) translate(275px,250px);
-		background-image:url(class.jpg);
-		width:300px;
-		height:300px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.linksBox{
-		-ms-transform: rotate(50deg) translate(240px,-660px); /* IE 9 */
-    	-webkit-transform: rotate(50deg) translate(240px,-660px); /* Safari */
-    	transform: rotate(50deg) translate(240px,-660px);
-		background-color:#C13C10;
-		width:475px; /*475*/
-		height:475px;
-		float:left;
-		overflow:hidden;
-		position:fixed;
-	}
-	.linksInBox{
-		-ms-transform: rotate(-50deg) translate(-125px,225px); /* IE 9 */
-    	-webkit-transform: rotate(-50deg) translate(-125px,225px); /* Safari */
-    	transform: rotate(-50deg) translate(-125px,225px);
-		color:#FFFFFF;
-		text-align:left;
-		width:350px; /*475*/
-		height:190px;
-		font-size:22px;
-	}
-	a:link {
-		color:#FFFFFF;
-		text-decoration:none;
-	}
-	a:visited{
-		color:#d4753f;	
-		text-decoration:none;
-	}
-	a:hover {
-		color:#ECBB6B;	
-		text-decoration:none;
-	}
-	
-	.textClass{
-		height:550px;
-		max-height:550px;
-		width:575px;
-		min-width:350px;
-		min-height:350px;
-		overflow-y: auto;
-		background-color:#C1C1C1;
-	}
-	.btn{
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
-		height:50px;
-		width:175px;
-		font-size:16px;
-	}
-	
-</style>
+<link rel="stylesheet" href="myCss.css"/>
 
 </head>
 <body>
 <!-- This is a comment -->
 <div class="container">
+<div class="bkgndtxtbx">&nbsp;</div>
 <h1 class="name">Meagan Hiatt</h1>
 <div class="linksBox"> 
     	<div class="linksInBox">
@@ -196,15 +20,15 @@
         </div>
     </div>
     
-    <div class="greenSq2">&nbsp;</div>
-    <div class="yellowSq">&nbsp;</div>
+    <div class="greenSqR">&nbsp;</div>
+    <div class="yellowSqR">&nbsp;</div>
     
-    <div class="blueSq">&nbsp;</div>
-    <div class="textClass" style="text-align:center">
+    <div class="blueSqR">&nbsp;</div>
+    <div class="textClassRE" style="text-align:center">
   	<img src="page1.png" width="90%" />
     <img src="page2.png" width="90%" />
     <br/><br/>
-	<button type="button" class="btn" onClick="window.location.href='resume.pdf'"> Download Resume </button>
+	<button type="button" class="btnR" onClick="window.location.href='resume.pdf'"> Download Resume </button>
 	<br/><br/>
     
     </div>
