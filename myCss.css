@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+/*FOR HOME PAGE AND ALL PAGES*/
+body{
+		background-color:#333333;
+		height:100%;
+		scrollbar-track-color: #EEEEEE;
+		scrollbar-face-color: #00A0F5;
+		scrollbar-highlight-color: #00A0FF;
+		scrollbar-3dlight-color: #808080;
+		scrollbar-darkshadow-color: #00008B;
+		scrollbar-shadow-color: #0090FF;
+		scrollbar-arrow-color: #FFFFFF;
+		scrollbar-base-color: #FFFFFF;
+		min-width:845px;
+		overflow-x:auto;
+	}
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+	 
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+	 
+	::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		background: rgba(0,100,200,0.8); 
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(0,100,200,0.4); 
+	}
+	
+	
+	.container{
+		background-color:#333333;
+		margin:-15px auto;
+		max-width:900px;
+		max-height:500px;
+		height:500px;
+	}
+	.bkgndtxtbx {
+		background-color:#D7EFFF;
+		-ms-transform: rotate(-40deg) translate(240px,-660px); /* IE 9 */
+    	-webkit-transform: rotate(-40deg) translate(240px,-660px); /* Safari */
+    	transform: rotate(-40deg) translate(-410px,-485px);
+		width:1265px; /*475*/
+		height:1100px;
+		float:left;
+		position:fixed;
+		elevation:below;
+		
+	}
+	.name{
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:60px;
+		padding:0px;
+		color:#000000;
+		-ms-transform: translate(0px,0px); /* IE 9 */
+    	-webkit-transform: translate(0px,0px); /* Safari */
+    	transform: translate(0px,0px);
+	}
+	.nameIntro{
+		font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:60px;
+		padding:0px;
+		color:#FFFFFF;
+		-ms-transform: translate(0px,0px); /* IE 9 */
+    	-webkit-transform: translate(0px,0px); /* Safari */
+    	transform: translate(0px,0px);
+	}
+	.blueSq{
+		-ms-transform: rotate(50deg) translate(575px,-315px); /* IE 9 */
+    	-webkit-transform: rotate(50deg)  translate(575px,-315px); /* Safari */
+    	transform: rotate(50deg) translate(575px,-315px);
+		background-color: #6CBDF0;
+		width:150px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.blueSq2{
+		-ms-transform: rotate(50deg) translate(-215px,140px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(-215px,140px); /* Safari */
+    	transform: rotate(50deg) translate(-215px,140px);
+		background-color: #6CBDF0;
+		width:150px;
+		height:1050px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.greenSq{
+		-ms-transform: rotate(-40deg) translate(65px,323px); /* IE 9 */
+    	-webkit-transform: rotate(-40deg) translate(65px,323px); /* Safari */
+    	transform: rotate(-40deg) translate(65px,323px);
+		background-color:#57D365;
+		width:150px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.greenSq2{
+		-ms-transform: rotate(-40deg) translate(65px,323px); /* IE 9 */
+    	-webkit-transform: rotate(-40deg) translate(65px,323px); /* Safari */
+    	transform: rotate(-40deg) translate(-390px,344px);
+		background-color:#57D365;
+		width:150px;
+		height:475px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.yellowSq{
+		-ms-transform: rotate(50deg) translate(460px,65px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(460px,65px); /* Safari */
+    	transform: rotate(50deg) translate(505px,45px);
+		background-color:#F4EA5B;
+		width:150px;
+		height:480px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.pictureBox{
+		-ms-transform: rotate(50deg) translate(275px,-260px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(275px,-260px); /* Safari */
+    	transform: rotate(50deg) translate(275px,-260px);
+		background-image:url("pcb.jpg");
+		background-position:center;
+		width:300px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.pictureBox2{
+		-ms-transform: rotate(50deg) translate(275px,250px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(275px,250px); /* Safari */
+    	transform: rotate(50deg) translate(275px,250px);
+		background-image:url("harddrive.jpg");
+		background-position:center;
+		width:300px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.linksBox{
+		-ms-transform: rotate(50deg) translate(240px,-660px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(240px,-660px); /* Safari */
+    	transform: rotate(50deg) translate(240px,-660px);
+		background-color:#C13C10;
+		width:475px; /*475*/
+		height:475px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.linksInBox{
+		-ms-transform: rotate(-50deg) translate(-125px,225px); /* IE 9 */
+    	-webkit-transform: rotate(-50deg) translate(-125px,225px); /* Safari */
+    	transform: rotate(-50deg) translate(-125px,225px);
+		color:#FFFFFF;
+		text-align:left;
+		width:350px; /*475*/
+		height:190px;
+		font-size:22px;
+	}
+	a:link {
+		color:#FFFFFF;
+		text-decoration:none;
+	}
+	a:visited{
+		color:#d4753f;	
+		text-decoration:none;
+	}
+	a:hover {
+		color:#ECBB6B;	
+		text-decoration:none;
+	}
+	
+
+	/*FOR RESEARCH AND RESUME PAGE ONLY*/
+	.blueSqR{
+		-ms-transform: rotate(50deg) translate(385px,825px); /* IE 9 */
+    	-webkit-transform: rotate(50deg)  translate(385px,825px); /* Safari */
+    	transform: rotate(-40deg) translate(385px,825px);
+		background-color: #6CBDF0;
+		width:150px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	
+	.greenSqR{
+		-ms-transform: rotate(50deg) translate(685px,-785px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(685px,-785px); /* Safari */
+    	transform: rotate(50deg) translate(685px,-785px);
+		background-color:#57D365;
+		width:150px;
+		height:475px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.yellowSqR{
+		-ms-transform: rotate(50deg) translate(680px,-95px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(680px,-95px); /* Safari */
+    	transform: rotate(50deg) translate(680px,-95px);
+		background-color:#F4EA5B;
+		width:150px;
+		height:480px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	
+	/* FOR RESUME ONLY*/
+	.textClassRE{
+		-ms-transform: translate(5px,5px); /* IE 9 */
+    	-webkit-transform: translate(5px,5px); /* Safari */
+    	transform: translate(5px,5px);
+		height:550px;
+		max-height:550px;
+		width:550px;
+		min-width:350px;
+		min-height:350px;
+		overflow-y: auto;
+		background-color:#C5C5C5;
+	}
+	.btnR{
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		height:50px;
+		width:175px;
+		font-size:16px;
+	}
+	
+	/* FOR ABOUT PAGE ONLY*/
+	.blueSqA{
+		-ms-transform: rotate(-40deg) translate(386px,828px); /* IE 9 */
+    	-webkit-transform: rotate(-40deg) translate(386px,828px); /* Safari */
+    	transform: rotate(-40deg) translate(386px,828px);
+		background-color: #6CBDF0;
+		width:150px;
+		height:300px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	
+	
+	.greenSqA{
+		-ms-transform: rotate(50deg) translate(685px,-785px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(685px,-785px); /* Safari */
+    	transform: rotate(50deg) translate(685px,-785px);
+		background-color:#57D365;
+		width:150px;
+		height:475px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.yellowSqA{
+		-ms-transform: rotate(50deg) translate(686px,-95px); /* IE 9 */
+    	-webkit-transform: rotate(50deg) translate(686px,-95px); /* Safari */
+    	transform: rotate(50deg) translate(686px,-95px);
+		background-color:#F4EA5B;
+		width:150px;
+		height:480px;
+		float:left;
+		overflow:hidden;
+		position:fixed;
+	}
+	.textClassA{
+		-ms-transform: translate(-10px,-20px); /* IE 9 */
+    	-webkit-transform: translate(-10px,-20px); /* Safari */
+    	transform: translate(-10px,-20px);
+		height:550px;
+		max-height:550px;
+		width:515px;
+		min-width:320px;
+		min-height:320px;
+		overflow-y: auto;
+		background-color:#D7EFFF;
+		text-align:left;
+		padding:15px;
+		font-family:Arial;
+		elevation:above;
+	}
+	
+	
+	
