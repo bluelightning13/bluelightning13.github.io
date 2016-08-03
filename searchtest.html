@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<div id="buttons">
+      <label> <input id="query" value="cats" type="text"/><button id="search-button" onclick="search()">Search</button></label>
+    </div>
+    <div id="search-container">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="auth.js"></script>
+    
+    <script>
+
+	// After the API loads, call a function to enable the search box.
+	function handleAPILoaded() {
+	  $('#search-button').attr('disabled', false);
+	}
+	
+	// Search for a specified string.
+	function search() {
+	  var q = $('#query').val();
+	  var request = gapi.client.youtube.search.list({
+		q: q,
+		part: 'snippet'
+	  });
+	
+	  request.execute(function(response) {
+		var str = JSON.stringify(response.result);
+		$('#search-container').html('<pre>' + str + '</pre>');
+	  });
+	}
+	
+	</script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  </body>
+</html>
