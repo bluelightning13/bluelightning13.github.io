@@ -4,7 +4,6 @@
 /* Build first in '06 */
 /* 1/4/2015: upgraded to YouTube API v3 */
 /* 6/5/2015: added back views and duration  */
-/* Edited by M.Hiatt for student projects */
 
 Function.prototype.bind = function(obj, args) {
     var method = this,
