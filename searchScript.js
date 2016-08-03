@@ -226,14 +226,14 @@ var ytEmbed = {
         }
 
         var div = document.getElementById(this.cfg.block);
-
+        if(!(div.childNodes == null)){
         var children = div.childNodes;
         for (var i = children.length; i > -1; i--) {
             if (children[i] && (children[i].className.indexOf("error") !== -1 || children[i].tagName === "UL")) { /* is error message or result list */
                 div.removeChild(children[i]);
             }
         }
-
+        }
 
         //div.innerHTML = ''; //clear ul
         if (json.error) {
