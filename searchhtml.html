@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+
+
 </head>
 
 <body>
-<script src="https://www.yvoschaap.com/ytpage/ytembed.js"></script>
-<div id="ytThumbs"></div>
+<script src="searchScript.js"></script>
 
-<script>
-	ytEmbed.init({'block':'ytThumbs','key':'your-youtube-developer-key','q':'cats','type':'search','results':10,'meta':true,'player':'embed','layout':'full'});
-</script>
+<form onsubmit="ytEmbed.init({'block':'youtubeDivSearch','type':'search','q':document.getElementById('ytSearchField').value,'results': 5,'meta':true}); return false;">
+  <input type="text" id="ytSearchField">
+  <input type="submit" value="  Search  ">
+</form>
 </body>
 </html>
