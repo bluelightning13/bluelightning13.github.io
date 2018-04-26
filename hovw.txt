@@ -1,3 +1,4 @@
+<div class="pSummaryPanel">
 <span class="heading">Hydroponics:</span> 
 <span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. </span>
 <br/>
@@ -41,3 +42,4 @@ Even if you are new to sewing with a machine or have not used mylar in sewing it
 You can also just pin the mylar to the material. This blocks most of the light from your eyes and reflects it back to the plants.
 It's a win win!
 </span>
+</div>
