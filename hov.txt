@@ -1,1 +1,17 @@
-<p><h3>Hydroponics:</h3> where plants are not grown in soil - only water, nutrients and light are used. <p>
+<span class="heading">Hydroponics:</span> 
+<span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. <span>
+<br/>
+<span class="ptext">
+This idea was mentioned to me by my boyfriend Don, who was interested in building a hydroponics system 
+when he got a house. He was talking about the carbon filtering systems and having a huge mylar tent...and I 
+thought starting small would be a good first step.
+</span><span class="ptext">
+I got this small hydroponics kit off Amazon for around $40 for him. We also stopped at a local hydroponics supply
+store and got other supplies - all for under $100 except for the LED light source.
+</span><span class="ptext">
+The nets (the plastic pieces that contain the plant roots) were under a dollar. Ph balancing chemicals were around $15. 
+The plastic bin that hold the water was ~$3. 
+</span><span class="ptext">
+The light was the main cost - around $200. This cost actually drove me to create my Custom Lighting Project.
+
+</span>
