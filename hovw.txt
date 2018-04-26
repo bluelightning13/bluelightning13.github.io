@@ -1,5 +1,5 @@
 <span class="heading">Hydroponics:</span> 
-<span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. <span>
+<span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. </span>
 <br/>
 <span class="ptext">
 This idea was mentioned to me by my boyfriend Don, who was interested in building a hydroponics system 
