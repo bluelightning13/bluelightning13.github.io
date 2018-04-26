@@ -1,4 +1,3 @@
-<div class="pSummaryPanel">
 <span class="heading">Hydroponics:</span> 
 <span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. <span>
 <br/>
@@ -6,14 +5,39 @@
 This idea was mentioned to me by my boyfriend Don, who was interested in building a hydroponics system 
 when he got a house. He was talking about the carbon filtering systems and having a huge mylar tent...and I 
 thought starting small would be a good first step.
-</span><span class="ptext">
+</span>
+<br/>
+<span class="ptext">
 I got this small hydroponics kit off Amazon for around $40 for him. We also stopped at a local hydroponics supply
 store and got other supplies - all for under $100 except for the LED light source.
-</span><span class="ptext">
+</span>
+<br/>
+<span class="ptext">
 The nets (the plastic pieces that contain the plant roots) were under a dollar. Ph balancing chemicals were around $15. 
 The plastic bin that hold the water was ~$3. 
-</span><span class="ptext">
-The light was the main cost - around $200. This cost actually drove me to create my Custom Lighting Project.
-
 </span>
-</div>
+<br/>
+<span class="ptext">
+The light was the main cost - around $200. This cost actually drove me to create my Custom Lighting Project.
+</span>
+<br/>
+<span class="ptext">
+The light was very bright - good for the plant, but bad for our eyes and it weighed a bit. So it needed a good stand. 
+But we didn't want to spend a lot on one, so we made one:
+</span>
+<br/>
+<span class="ptext">
+I ended up making the wood frame (thanks to Don's dad who had a chop saw!) and stained it. This would support the 
+light and the wood you can use for this is cheap compared to store bought stands. 
+</span>
+<br/>
+<span class="ptext">
+Next I made the mylar sides. I got some material that looked good and was on sale. It was a little hard to sew the doors
+beacuse I didn't have much of that material so cutting it was a little awkward - but it all came out very well.
+Even if you are new to sewing with a machine or have not used mylar in sewing it was really easy. 
+</span>
+<br/>
+<span class="ptext">
+You can also just pin the mylar to the material. This blocks most of the light from your eyes and reflects it back to the plants.
+It's a win win!
+</span>
