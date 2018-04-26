@@ -112,6 +112,7 @@ body
 }
   </style>
 </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script  type="text/javascript">
   
   
@@ -198,50 +199,31 @@ function readStringFromFileAtPath (pathOfFileToReadFrom)
     }
 
 
-function changeToProject(elt, project)
+function changeToProject(elt, project, data)
 {
-	
-	var text = readStringFromFileAtPath ( project + ".txt" );
 	var c = document.getElementById(elt);
 	var p = document.getElementById("wrp" + project);
 	c.innerHTML = "";
 	c.style.border = p.style.border;
 	c.style.borderRadius = p.style.borderRadius;
-	c.innerHTML = text;
-
-	
-	
-	/*(function fade(elt){
-		(function fadeouth()
-		{
-			console.log("here");
-			var val = parseFloat(elt.style.opacity);
-			if(!((val -= .05) < 0))
-			{		
-				elt.style.opacity = val - .05;
-				setTimeout(fade,50);
-			} else{
-				elt.style.opacity = 0;
-				var text = FileHelper.readStringFromFileAtPath ( project + ".txt" );
-				var c = document.getElementById(elt);
-				var p = document.getElementById("wrp" + project);
-				c.style.border = p.style.border;
-				c.style.borderRadius = p.style.borderRadius;
-				c.innerHTML = text;
-			}
-		});	
-	});*/
-	
+	c.innerHTML = data;
 }
 
-
-
-
 window.onload = function(){
-	
 	fillProjects(document.getElementById("container")); 
-	document.getElementById("hydroOverview").addEventListener("click", function(){changeToProject("container", "hov")});
-	};
+	//document.getElementById("hydroOverview").addEventListener("click", function(){changeToProject("container", "hov")});
+	
+	 $("#hydroOverview").click(function() {
+        $.ajax({
+            url : "hov.txt",
+            dataType: "text",
+            success : function (data) {
+                changeToProject("container", "hov" ,data)
+            }
+        });
+    });
+
+};
   </script>
 <body>
 <div id="container">
