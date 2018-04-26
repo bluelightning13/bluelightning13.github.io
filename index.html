@@ -128,6 +128,7 @@ body
 	width:100%;
 	background-color:#FFF;
 	border-radius: 15px;
+	text-align:left;
 }
   </style>
 </head>
@@ -222,13 +223,13 @@ function changeToProject(elt, project, data)
 {
 	var c = document.getElementById(elt);
 	var p = document.getElementById("wrp" + project);
-	console.log("wrp" + project);
+	var cl = document.getElementById(project);.style.color;
 	c.innerHTML = "";
 	c.style.border = p.style.border;
 	c.style.borderRadius = p.style.borderRadius;
 	c.innerHTML = data;
-	 var h = document.getElementsByClassName("heading");
-	h[0].style.color = document.getElementById(project).style.color;
+    	var h = document.getElementsByClassName("heading");
+	h[0].style.color = cl;
 	
 }
 
