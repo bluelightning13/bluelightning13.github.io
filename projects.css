@@ -1,0 +1,108 @@
+
+/*________________________ Projects ________________________*/
+body
+{
+	background-color:#222;
+	margin:0;
+	padding:0;
+}
+#container
+{
+	margin:auto;
+	margin-top:0;
+	width:80%;
+	min-width:1000px;
+	text-align:center;
+}
+#hydro , #drag , #Thesis
+{
+	float:left;
+	background: #EEE;
+	border-radius: 5px 0px 0px 5px;
+	height: 300px;
+	min-width:250px;
+	width:50%;
+
+}
+#wrphydro, #wrpdrag, #wrpThesis
+{
+	border: 5px solid black;
+	border-radius: 10px;
+}
+/*________________________ Project Image Style ________________________*/
+#imghydro , #imgdrag , #imgThesis
+{
+	height:100%;
+	width:50%;
+	float:right;
+	height: 300px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center;
+	border-radius: 0px 5px 5px 0px;
+	min-width:250px;
+}
+#imghydro
+{
+	background-Image: url("C:/Users/mhiatt/Pictures/hydro.jpg");
+}
+#imgdrag
+{
+	background-Image: url("C:/Users/mhiatt/Pictures/dray2.jpg");
+}
+#imgThesis
+{
+	background-Image: url("C:/Users/mhiatt/Pictures/brightCosmos.jpg");
+}
+/*________________________ Generic Formats for Projects ________________________*/
+.wrp
+{
+	width:500px;
+	display:inline-block;
+	height: 300px;
+	padding: 5px 5px 5px 5px;
+	margin: 10px 10px 10px 10px;
+}
+.title , .bult , .subsection
+{
+	font-family: sans-serif;
+	text-align:left;
+	
+}
+
+.title
+{
+	font-size:23pt;
+	padding: 5px 5px 5px 5px;
+}
+
+.wrp4Sections
+{
+	width:100%;
+	
+}
+.subsection , .bult
+{
+	display:flex;
+	height:35px;
+	align-items:center;
+}
+.bult
+{
+	width: 20%;
+	float:left;	
+	justify-content:center;
+}
+
+.subsection
+{
+	font-size:18pt;
+	width:80%;
+	float:right;
+	text-align:left;
+}
+
+.subsection:hover{
+	font-weight:bold;
+}
