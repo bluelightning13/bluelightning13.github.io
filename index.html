@@ -123,6 +123,12 @@ body
 	font-size:32pt;
 	display: inline-block;
 }
+.pSummaryPanel{
+	height:100%;
+	width:100%;
+	background-color:#FFF;
+	border-radius: 15px;
+}
   </style>
 </head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -222,7 +228,7 @@ function changeToProject(elt, project, data)
 	c.style.borderRadius = p.style.borderRadius;
 	c.innerHTML = data;
 	 var h = document.getElementsByClassName("heading");
-	h[0].style.color = document.getElementById(project);.style.color;
+	h[0].style.color = document.getElementById(project).style.color;
 	
 }
 
