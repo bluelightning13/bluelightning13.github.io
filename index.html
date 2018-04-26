@@ -115,6 +115,7 @@ body
 	font-family: sans-serif;
 	font-size:14pt;
 	display: block;
+	color:#000;
 }
 .heading
 {
@@ -220,6 +221,9 @@ function changeToProject(elt, project, data)
 	c.style.border = p.style.border;
 	c.style.borderRadius = p.style.borderRadius;
 	c.innerHTML = data;
+	 var h = document.getElementsByClassName("heading");
+	h[0].style.color = document.getElementById(project);.style.color;
+	
 }
 
 window.onload = function(){
