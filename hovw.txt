@@ -1,3 +1,4 @@
+<div class="pSummaryPanel">
 <span class="heading">Hydroponics:</span> 
 <span class="ptext">where plants are not grown in soil - only water, nutrients and light are used. <span>
 <br/>
@@ -15,3 +16,4 @@ The plastic bin that hold the water was ~$3.
 The light was the main cost - around $200. This cost actually drove me to create my Custom Lighting Project.
 
 </span>
+</div>
